@@ -6,7 +6,6 @@ import HomeScreen from './screens/HomeScreen';
 import { store } from './store';
 
 
-// TODO: setup redux
 // TODO: 
 
 export default function App() {
