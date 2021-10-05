@@ -8,8 +8,8 @@ import { GOOGLE_MAPS_APIKEY } from "@env";
 
 
 const HomeScreen = () => {
-    // useNavigation hook
-
+    
+    
 
     return (
         <SafeAreaView style={tw`bg-white h-full`}>
@@ -34,10 +34,18 @@ const HomeScreen = () => {
                             fontSize: 18,
                         },
                     }}
+                    onPress={(data, details = null) => {
+                        console.log(data);
+                        console.log(details);
+                    }}
+                    fetchDetails={true}
+                    returnKeyType={"search"}
+                    enablePoweredByContainer={false}
+                    minLength={2}
                     query={{
                         key: GOOGLE_MAPS_APIKEY,
                         language: 'en',
-                        
+
                     }}
                     placeholder="Where From?"
                     nearbyPlacesAPI="GooglePlacesSearch"
