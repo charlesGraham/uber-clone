@@ -11,8 +11,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import MapScreen from './screens/MapScreen';
 
 
-// TODO: 
-
 export default function App() {
 
   // prep for "stack" of pages to navigate through

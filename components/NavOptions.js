@@ -20,7 +20,6 @@ const data = [
 ];
 
 const NavOptions = () => {
-
     const navigation = useNavigation();
 
     return (
